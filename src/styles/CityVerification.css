@@ -1,0 +1,44 @@
+.city-verification-container {
+  width: 70vw;
+  margin: 10px auto;
+}
+@media(min-width: 600px) {
+  .city-verification-container {
+    width: 30vw;
+  }
+}
+@media(min-width: 1024px) {
+  .city-verification-container {
+    width: 25vw;
+  }
+}
+
+.status-200 {
+  border: 1px solid white;
+  color: white;
+  padding: 10px;
+}
+
+.status-200 > h2 {
+  font-size: 1.1rem;
+  margin: 0 auto 15px auto;
+}
+
+.status-200 > p {
+  margin: 0;
+}
+
+.status-200 > .accept-button {
+  margin: 20px auto 15px auto;
+}
+
+.status-200 > .cancel-button {
+  background: #ffa1a1;
+  margin-left: 5px;
+}
+
+.status-404 {
+  padding: 0 15px;
+  border: 1px solid white;
+  color: red;
+}

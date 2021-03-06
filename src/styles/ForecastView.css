@@ -1,0 +1,32 @@
+.forecast-view > button {
+  width: 150px;
+  height: 30px;
+}
+
+.forecast-view > h2 {
+  font-size: 20px !important;
+}
+
+.forecast-view > .mobile-divider {
+  visibility: visible;
+  height: 1px;
+  width: 100%;
+  background: white;
+}
+@media (min-width: 600px) {
+  .forecast-view > .mobile-divider {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+  }
+}
+
+.forecast-cards-container {
+  display: block;
+}
+@media (min-width: 600px) {
+  .forecast-cards-container {
+    display: inline-flex;
+    width: 552px;
+  }
+}
