@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import Clear from '../lib/SVGs/sunny.svg';
 import Clouds from '../lib/SVGs/cloudy.svg';
 import Rain from '../lib/SVGs/rain.svg';
@@ -17,5 +18,9 @@ function WeatherIcon(props) {
       return null;
   }
 }
+
+WeatherIcon.propTypes = {
+  weatherType: PropTypes.string,
+};
 
 export default WeatherIcon;

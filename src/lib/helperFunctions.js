@@ -10,14 +10,6 @@ function hasNumber(myString) {
   return /\d/.test(myString);
 }
 
-function hasLetter(myString) {
-  return /[a-zA-Z]/g.test(myString);
-}
-
-function mixesNumsAndLetters(myString) {
-  return hasNumber(myString) && hasLetter(myString);
-}
-
 export async function getWeatherCoords(userIn, countryCode) {
   let isNumeric = hasNumber(userIn);
   let fetchURL = `${openWeatherURL}?`;

@@ -1,4 +1,6 @@
+import PropTypes from 'prop-types';
 import WeatherIcon from './WeatherIcon';
+
 import '../styles/ForecastHeroCard.css';
 
 function ForecastHeroCard(props) {
@@ -6,7 +8,7 @@ function ForecastHeroCard(props) {
 
   return (
     <div className="forecast-hero-card">
-      {console.log(forecast)}
+      {console.log('forecast prop received by ForecastHeroCard:', forecast)}
       <div className="hero-date">
         <p>TODAY:</p>
         <p>{date}</p>
@@ -25,5 +27,10 @@ function ForecastHeroCard(props) {
     </div>
   );
 }
+
+ForecastHeroCard.propTypes = {
+  forecast: PropTypes.obj,
+  date: PropTypes.string,
+};
 
 export default ForecastHeroCard;

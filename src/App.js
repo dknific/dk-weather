@@ -7,7 +7,7 @@ import {
   isObjectEmpty,
   getWeatherCoords,
   getWeatherForecast,
-} from './lib/constants';
+} from './lib/helperFunctions';
 
 import './styles/App.css';
 

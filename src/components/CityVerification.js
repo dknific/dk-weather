@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import '../styles/CityVerification.css';
 
 function CityVerification(props) {
@@ -28,5 +29,12 @@ function CityVerification(props) {
     </div>
   );
 }
+
+CityVerification.propTypes = {
+  statusCode: PropTypes.number,
+  location: PropTypes.obj,
+  getForecast: PropTypes.func,
+  reset: PropTypes.func,
+};
 
 export default CityVerification;

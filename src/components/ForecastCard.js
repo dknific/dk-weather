@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import WeatherIcon from './WeatherIcon';
 
 import '../styles/ForecastCard.css';
@@ -19,5 +20,10 @@ function ForecastCard(props) {
     </div>
   );
 }
+
+ForecastCard.propTypes = {
+  forecast: PropTypes.obj,
+  date: PropTypes.string,
+};
 
 export default ForecastCard;
