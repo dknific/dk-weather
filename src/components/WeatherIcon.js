@@ -4,8 +4,8 @@ import Clouds from '../lib/SVGs/cloudy.svg';
 import Rain from '../lib/SVGs/rain.svg';
 import Snow from '../lib/SVGs/snowy.svg';
 
-function WeatherIcon(props) {
-  switch (props.weatherType) {
+function WeatherIcon({ weatherType }) {
+  switch (weatherType) {
     case 'Clear':
       return <img src={Clear} alt="yellow sun" />;
     case 'Clouds':

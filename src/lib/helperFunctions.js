@@ -10,16 +10,16 @@ function hasNumber(myString) {
   return /\d/.test(myString);
 }
 
-export async function getWeatherCoords(userIn, countryCode) {
+export async function getWeatherCoords(userIn) {
   let isNumeric = hasNumber(userIn);
   let fetchURL = `${openWeatherURL}?`;
   let location;
 
   if (isNumeric) {
-    location = `${userIn},${countryCode}`;
+    location = `${userIn},US`;
     fetchURL += `zip=${location}&appid=${appid}`;
   } else {
-    location = `${encodeURI(userIn)},,${countryCode}`;
+    location = `${encodeURI(userIn)},,US`;
     fetchURL += `q=${location}&appid=${appid}`;
   }
 
@@ -36,7 +36,7 @@ export async function getWeatherForecast(coords) {
 export function generateDatesArray() {
   let datesArray = [];
   const date = new Date();
-  const dotw = ['Sun','Mon','Tues','Wed','Thurs','Fri','Sat'];
+  const dotw = ['Sun','Mon','Tue','Wed','Thurs','Fri','Sat'];
 
   {/* Construct today's date as a phrase */}
   const dateWords = date.toString().split(' ');

@@ -6,7 +6,7 @@ import { generateDatesArray } from '../lib/helperFunctions';
 import '../styles/ForecastView.css';
 
 function ForecastView(props) {
-  const { location, forecast, reset } = props;
+  const { location, forecast, resetApp } = props;
   const datesArray = generateDatesArray();
 
   const heroForecast = forecast[0];
@@ -14,7 +14,8 @@ function ForecastView(props) {
 
   return (
     <div className="forecast-view">
-      <button onClick={() => reset()}>Search Again!</button>
+      <button onClick={() => resetApp()}>Search Again!</button>
+
       <h2>Your 7-day forecast for <br/>{location.name}:</h2>
       <div className="mobile-divider" />
 
@@ -31,7 +32,7 @@ function ForecastView(props) {
 ForecastView.propTypes = {
   location: PropTypes.obj,
   forecast: PropTypes.array,
-  reset: PropTypes.func,
+  resetApp: PropTypes.func,
 };
 
 export default ForecastView;

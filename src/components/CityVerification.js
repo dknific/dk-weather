@@ -2,10 +2,10 @@ import PropTypes from 'prop-types';
 import '../styles/CityVerification.css';
 
 function CityVerification(props) {
-  const { statusCode, location, getForecast, reset } = props;
+  const { loading, statusCode, location, getForecast, resetApp } = props;
 
   return (
-    <div className="city-verification-container">
+    <div className={`city-verification-container ${loading ? 'loading' : ''}`}>
       {statusCode === 200 && (
         <div className="status-200">
           <h2>Is this the correct city?</h2>
@@ -14,7 +14,7 @@ function CityVerification(props) {
           <button className="accept-button" onClick={() => getForecast()}>Yes, Get Forecast!</button>
           <button
             className="cancel-button"
-            onClick={() => reset()}
+            onClick={() => resetApp()}
           >
             No, Search Again.
           </button>
@@ -31,10 +31,11 @@ function CityVerification(props) {
 }
 
 CityVerification.propTypes = {
+  loading: PropTypes.bool.isRequired,
   statusCode: PropTypes.number,
   location: PropTypes.obj,
   getForecast: PropTypes.func,
-  reset: PropTypes.func,
+  resetApp: PropTypes.func,
 };
 
 export default CityVerification;
