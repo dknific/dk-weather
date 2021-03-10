@@ -30,7 +30,7 @@ function ForecastView(props) {
 }
 
 ForecastView.propTypes = {
-  location: PropTypes.obj,
+  location: PropTypes.object,
   forecast: PropTypes.array,
   resetApp: PropTypes.func,
 };

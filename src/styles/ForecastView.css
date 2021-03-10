@@ -1,10 +1,21 @@
 .forecast-view > button {
   width: 150px;
   height: 30px;
+  margin-top: 15px;
+}
+@media (min-width: 600px) {
+  .forecast-view > button {
+    margin-top: 0;
+  }
+}
+
+.forecast-view > button:hover {
+  cursor: pointer;
 }
 
 .forecast-view > h2 {
   font-size: 20px !important;
+  margin-top: 20px;
 }
 
 .forecast-view > .mobile-divider {

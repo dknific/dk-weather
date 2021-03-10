@@ -8,12 +8,15 @@ function ForecastHeroCard(props) {
 
   return (
     <div className="forecast-hero-card">
-      {console.log('forecast prop received by ForecastHeroCard:', forecast)}
       <div className="hero-date">
         <p>TODAY:</p>
         <p>{date}</p>
       </div>
       <div className="weather">
+        <div className="hero-info">
+          <p>Feels like: {forecast.feels_like.day}&#176; F</p>
+          <p className="humidity">Humidity: {forecast.humidity}</p>
+        </div>
         <div className="weather-glyph">
           <WeatherIcon weatherType={forecast.weather[0].main} />
           <p>{forecast.weather[0].main}</p>
@@ -29,7 +32,7 @@ function ForecastHeroCard(props) {
 }
 
 ForecastHeroCard.propTypes = {
-  forecast: PropTypes.obj,
+  forecast: PropTypes.object,
   date: PropTypes.string,
 };
 

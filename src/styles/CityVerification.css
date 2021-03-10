@@ -16,7 +16,7 @@
 .status-200 {
   border: 1px solid white;
   color: white;
-  padding: 10px;
+  padding: 10px 10px 20px 10px;
 }
 
 .status-200 > h2 {
@@ -26,6 +26,11 @@
 
 .status-200 > p {
   margin: 0;
+}
+
+.status-200 > .coords-200 {
+  font-size: 14px;
+  margin-top: 2px;
 }
 
 .status-200 > .accept-button {

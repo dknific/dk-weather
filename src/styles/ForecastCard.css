@@ -63,3 +63,12 @@
     padding-top: 10px;
   }
 }
+
+.high-low-container > p {
+  font-size: 14px;
+}
+@media (min-width: 600px) {
+  .high-low-container > p {
+    width: 36px;
+  }
+}

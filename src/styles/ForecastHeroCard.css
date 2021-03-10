@@ -45,13 +45,37 @@
   margin: 0;
 }
 
+.weather > .hero-info > p {
+  width: 79px;
+  font-size: 14px;
+}
+@media (min-width: 600px) {
+  .weather > .hero-info > p {
+    width: 150px;
+    font-size: 15px;
+  }
+}
+
+.hero-info > .humidity {
+  display: none;
+}
+@media (min-width: 600px) {
+  .hero-info > .humidity {
+    display: block;
+  }
+}
+
 @media (min-width: 600px) {
   .weather > .weather-glyph {
-    margin-left: 170px;
-    margin-right: 70px;
+    margin-left: 58px;
+    margin-right: 103px;
   }
 }
 
 .forecast-hero-card > div > div > img {
   width: 33px;
+}
+
+.hero-high-low {
+  font-size: 14px;
 }

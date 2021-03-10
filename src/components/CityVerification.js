@@ -10,7 +10,7 @@ function CityVerification(props) {
         <div className="status-200">
           <h2>Is this the correct city?</h2>
           <p>{location.name}, {location.country}</p>
-          <p>{location.coords.lat}, {location.coords.lon}</p>
+          <p className="coords-200">({location.coords.lat}, {location.coords.lon})</p>
           <button className="accept-button" onClick={() => getForecast()}>Yes, Get Forecast!</button>
           <button
             className="cancel-button"
@@ -33,7 +33,7 @@ function CityVerification(props) {
 CityVerification.propTypes = {
   loading: PropTypes.bool.isRequired,
   statusCode: PropTypes.number,
-  location: PropTypes.obj,
+  location: PropTypes.object,
   getForecast: PropTypes.func,
   resetApp: PropTypes.func,
 };

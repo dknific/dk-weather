@@ -13,8 +13,8 @@ function ForecastCard(props) {
         <WeatherIcon weatherType={forecast.weather[0].main} />
         <div className="divider" />
         <div className="high-low-container">
-          <p>High: {parseInt(forecast.temp.max)}&#176;</p>
-          <p>Low: {parseInt(forecast.temp.min)}&#176;</p>
+          <p>High {parseInt(forecast.temp.max)}&#176;</p>
+          <p>Low {parseInt(forecast.temp.min)}&#176;</p>
         </div>
       </div>
     </div>
@@ -22,7 +22,7 @@ function ForecastCard(props) {
 }
 
 ForecastCard.propTypes = {
-  forecast: PropTypes.obj,
+  forecast: PropTypes.object,
   date: PropTypes.string,
 };
 

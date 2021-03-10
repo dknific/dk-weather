@@ -31,6 +31,7 @@ function App() {
     if (weatherResponse.cod === 200) {
       const newLocation = {
         name: weatherResponse.name,
+        country: weatherResponse.sys.country,
         coords: weatherResponse.coord,
       };
       setLocation(newLocation);
@@ -73,7 +74,7 @@ function App() {
         />
       )}
 
-      {!isObjectEmpty(location) && forecast.length === 0 && (
+      {location && !isObjectEmpty(location) && forecast.length === 0 && (
         <CityVerification
           loading={isLoading}
           statusCode={status}
