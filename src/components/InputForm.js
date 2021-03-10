@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types';
 import ErrorMessage from './ErrorMessage';
 
+import '../styles/InputForm.css'
+
 function InputForm(props) {
   const { loading, formSubmit, statusCode, textChange } = props;
 

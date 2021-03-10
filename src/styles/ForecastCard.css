@@ -41,7 +41,7 @@
 
 .weather > .divider {
   visibility: visible;
-  height: auto;
+  height: 34px;
   width: 1px;
   background: white;
   margin: 0;
@@ -49,6 +49,8 @@
 @media (min-width: 600px) {
   .weather > .divider {
     visibility: hidden;
+    height: 0;
+    width: 0;
   }
 }
 

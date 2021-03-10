@@ -1,6 +1,6 @@
 # dk-weather
 
-Click here for a Live Demo! (Mobile browsers compatible!)
+[Click here for a Live Demo!](http://jsdemos.s3-website-us-east-1.amazonaws.com/) (Mobile browsers compatible!)
 
 ---
 A React.js implementation of the classic "weather app" format using the [Open Weather API](https://openweathermap.org/api) to fetch real-time 7-day forecast info.
