@@ -5,7 +5,6 @@ import '../styles/ForecastHeroCard.css';
 
 function ForecastHeroCard(props) {
   const { forecast, date } = props;
-  console.log(forecast);
 
   return (
     <div className="forecast-hero-card">
