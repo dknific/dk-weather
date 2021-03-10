@@ -7,7 +7,7 @@ function ErrorMessage() {
       <p className="error-code">404 - No Results.</p>
       <div className="divider" />
       <p>It looks like there was a problem with your search term.</p>
-      <p>Please enter a zip code or place name and try again.</p>
+      <p>Please check your input and try again.</p>
     </div>
   );
 }

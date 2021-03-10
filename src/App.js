@@ -25,21 +25,23 @@ function App() {
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
-    setStatus();
-    setIsLoading(true);
-    const weatherResponse = await getWeatherCoords(userIn);
-    if (weatherResponse.cod === 200) {
-      const newLocation = {
-        name: weatherResponse.name,
-        country: weatherResponse.sys.country,
-        coords: weatherResponse.coord,
-      };
-      setLocation(newLocation);
-      setStatus(200);
-      setIsLoading(false);
-    } else {
-      setStatus(404);
-      setIsLoading(false);
+    if (userIn.length > 0) {
+      setStatus();
+      setIsLoading(true);
+      const weatherResponse = await getWeatherCoords(userIn);
+      if (weatherResponse.cod === 200) {
+        const newLocation = {
+          name: weatherResponse.name,
+          country: weatherResponse.sys.country,
+          coords: weatherResponse.coord,
+        };
+        setLocation(newLocation);
+        setStatus(200);
+        setIsLoading(false);
+      } else {
+        setStatus(404);
+        setIsLoading(false);
+      }
     }
   }
 
