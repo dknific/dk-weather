@@ -79,10 +79,12 @@
 
 .forecast-hero-card > div > div > div > img {
   width: 58px;
+  height: 58px;
 }
 @media (min-width: 600px) {
   .forecast-hero-card > div > div > div > img {
     width: 45px;
+    height: 45px;
   }
 }
 
