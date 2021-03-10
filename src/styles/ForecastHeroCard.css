@@ -14,7 +14,7 @@
 }
 
 .forecast-hero-card > .hero-date > p,
-.forecast-hero-card > div > div > p {
+.forecast-hero-card > div > div > div > p {
   margin: 0;
 }
 
@@ -25,32 +25,37 @@
   margin-bottom: 10px;
 }
 
-.forecast-hero-card > .weather {
-  display: inline-flex;
-  width: 100%;
-  justify-content: space-around;
-  margin: 17px auto;
-  align-items: center;
+.desktop-container {
+  display: none;
 }
 @media (min-width: 600px) {
-  .forecast-hero-card > .weather {
+  .desktop-container {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 10px auto;
+    align-items: center;
     justify-content: center;
   }
 }
 
-.weather > .hero-divider {
+.weather > .desktop-container > .hero-divider {
   height: auto;
   width: 1px;
   background: white;
   margin: 0;
 }
 
-.weather > .hero-info > p {
+.desktop-container > .hero-info > h1 {
+  margin: 0;
+}
+
+.desktop-container > .hero-info > p {
   width: 79px;
   font-size: 14px;
 }
 @media (min-width: 600px) {
-  .weather > .hero-info > p {
+  .desktop-container > .hero-info > p {
     width: 150px;
     font-size: 15px;
   }
@@ -66,16 +71,53 @@
 }
 
 @media (min-width: 600px) {
-  .weather > .weather-glyph {
-    margin-left: 58px;
-    margin-right: 103px;
+  .weather > .desktop-container > .weather-glyph {
+    margin-left: 55px;
+    margin-right: 80px;
   }
 }
 
-.forecast-hero-card > div > div > img {
-  width: 33px;
+.forecast-hero-card > div > div > div > img {
+  width: 58px;
+}
+@media (min-width: 600px) {
+  .forecast-hero-card > div > div > div > img {
+    width: 45px;
+  }
 }
 
 .hero-high-low {
   font-size: 14px;
+}
+
+.desktop-container > .hero-high-low {
+  margin-right: 32px;
+}
+
+.mobile-container {
+  display: flex;
+  justify-content: space-around;
+}
+@media (min-width: 600px) {
+  .mobile-container {
+    display: none;
+  }
+}
+
+.mobile-container > .hero-divider {
+  width: 1px;
+  height: 70px;
+  background: white;
+  margin-top: 10px;
+}
+
+.mobile-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.mobile-info > h1 {
+  margin: 0;
 }
