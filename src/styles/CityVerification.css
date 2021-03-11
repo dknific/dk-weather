@@ -63,10 +63,11 @@
 .accept-button {
   width: 90%;
   height: 40px;
+  background: #ebebeb;
 }
 
 .cancel-button {
-  width: 60%;
+  width: 75%;
   background: #ffa1a1;
   height: 35px
 }
