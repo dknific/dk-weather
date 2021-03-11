@@ -36,7 +36,7 @@ export async function getWeatherForecast(coords) {
 export function generateDatesArray() {
   let datesArray = [];
   const date = new Date();
-  const dotw = ['Sun','Mon','Tue','Wed','Thurs','Fri','Sat'];
+  const dotw = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
 
   {/* Construct today's date as a phrase */}
   const dateWords = date.toString().split(' ');

@@ -1,31 +1,43 @@
 .city-verification-container {
-  width: 70vw;
+  width: 300px;
   margin: 10px auto;
 }
 @media(min-width: 600px) {
   .city-verification-container {
-    width: 30vw;
-  }
-}
-@media(min-width: 1024px) {
-  .city-verification-container {
-    width: 25vw;
+    width: 500px;
   }
 }
 
 .status-200 {
-  border: 1px solid white;
   color: white;
   padding: 10px 10px 20px 10px;
 }
+@media(min-width: 600px) {
+  .status-200 {
+    border: 1px solid white;
+  }
+}
 
 .status-200 > h2 {
-  font-size: 1.1rem;
+  font-size: 27px;
+  width: 160px;
   margin: 0 auto 15px auto;
 }
 
-.status-200 > p {
+.divider-200 {
+  height: 1px;
+  width: 80%;
+  background: white;
+  margin: 0 auto 15px auto;
+}
+
+.location-200,
+.coords-200 {
   margin: 0;
+}
+
+.location-200 {
+  font-size: 20px;
 }
 
 .status-200 > .coords-200 {
@@ -33,13 +45,28 @@
   margin-top: 2px;
 }
 
-.status-200 > .accept-button {
-  margin: 20px auto 15px auto;
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto;
+  align-items: center;
 }
 
-.status-200 > .cancel-button {
+.accept-button,
+.cancel-button {
+  font-size: 17px;
+  margin: 5px auto;
+}
+
+.accept-button {
+  width: 90%;
+  height: 40px;
+}
+
+.cancel-button {
+  width: 80%;
   background: #ffa1a1;
-  margin-left: 5px;
+  height: 30px
 }
 
 .status-404 {

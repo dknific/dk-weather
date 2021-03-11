@@ -9,15 +9,18 @@ function CityVerification(props) {
       {statusCode === 200 && (
         <div className="status-200">
           <h2>Is this the correct city?</h2>
-          <p>{location.name}, {location.country}</p>
+          <div className="divider-200" />
+          <p className="location-200">{location.name}, {location.country}</p>
           <p className="coords-200">({location.coords.lat}, {location.coords.lon})</p>
-          <button className="accept-button" onClick={() => getForecast()}>Yes, Get Forecast!</button>
-          <button
-            className="cancel-button"
-            onClick={() => resetApp()}
-          >
-            No, Search Again.
-          </button>
+          <div className="buttons-container">
+            <button className="accept-button" onClick={() => getForecast()}>Yes, Get Forecast!</button>
+            <button
+              className="cancel-button"
+              onClick={() => resetApp()}
+            >
+              No, Search Again.
+            </button>
+          </div>
         </div>
       )}
       {statusCode === 404 && (
