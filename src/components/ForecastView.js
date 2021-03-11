@@ -15,9 +15,9 @@ function ForecastView(props) {
   return (
     <div className="forecast-view">
       <button onClick={() => resetApp()}>Search Again!</button>
+      <div className="mobile-divider" />
 
       <h2>Your 7-day forecast for <br/>{location.name}:</h2>
-      <div className="mobile-divider" />
 
       <ForecastHeroCard forecast={heroForecast} date={datesArray[0]} />
       <div className="forecast-cards-container">

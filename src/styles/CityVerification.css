@@ -54,6 +54,8 @@
 
 .accept-button,
 .cancel-button {
+  border: 0;
+  border-radius: 0 !important;
   font-size: 17px;
   margin: 5px auto;
 }
@@ -64,9 +66,9 @@
 }
 
 .cancel-button {
-  width: 80%;
+  width: 60%;
   background: #ffa1a1;
-  height: 30px
+  height: 35px
 }
 
 .status-404 {
