@@ -7,9 +7,9 @@ function InputForm(props) {
   const { loading, formSubmit, statusCode, textChange } = props;
 
   return (
-    <div className={loading ? 'loading' : ''}>
-      <h2>What zip code would you like a weather forecast for?</h2>
-      <p><i>Enter a zip code or name, then click 'Find City'.</i></p>
+    <div className={`que-container ${loading ? 'loading' : ''}`}>
+      <h2>Enter a zip code or city name to get weather results.</h2>
+      <p><i>Note: Zip Codes may give more accurate results.</i></p>
       <form onSubmit={(e) => formSubmit(e)}>
         <div>
           <input

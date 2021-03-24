@@ -5,7 +5,7 @@ function CityVerification(props) {
   const { loading, statusCode, location, getForecast, resetApp } = props;
 
   return (
-    <div className={`city-verification-container ${loading ? 'loading' : ''}`}>
+    <div className={`city-verification-container ${loading ? 'loading' : ''} que-container`}>
       {statusCode === 200 && (
         <div className="status-200">
           <h2>Is this the correct city?</h2>

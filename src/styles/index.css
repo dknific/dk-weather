@@ -11,10 +11,16 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #282c34;
+  background-color: #cbdcf7;
 }
 
 input[type="submit"],
 button:hover {
   cursor: pointer;
+}
+
+.que-container {
+  background: white;
+  border-radius: 21px 21px 0 21px;
+  padding: 25px;
 }
