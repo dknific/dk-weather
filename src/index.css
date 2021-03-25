@@ -27,6 +27,7 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0 25px;
+  padding-bottom: 50px;
 }
 @media (min-width: 600px) {
   .App-body {
