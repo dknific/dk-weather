@@ -59,6 +59,7 @@
   border-radius: 0 !important;
   font-size: 17px;
   margin: 5px auto;
+  box-shadow: 1px 1px 1px;
 }
 
 .accept-button {

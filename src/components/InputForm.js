@@ -18,7 +18,7 @@ function InputForm(props) {
             onChange={textChange}
           />
         </div>
-        <input type="submit" value="Find City" />
+        <button className="form-submit-btn" onClick={(e) => formSubmit(e)}>Find City</button>
       </form>
       {statusCode === 404 && (<ErrorMessage />)}
     </div>

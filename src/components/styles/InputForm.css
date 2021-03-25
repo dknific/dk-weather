@@ -2,11 +2,6 @@
   font-size: 17px;
 }
 
-.que-container > p,
-.que-container > h2 {
-  text-align: left;
-}
-
 .App-body > div > form {
   display: flex;
   flex-direction: column;
@@ -23,11 +18,11 @@
   text-align: center;
 }
 
-.App-body > div > form > input[type=submit] {
-  font-size: 16px;
-  border: 0 !important;
-  border-radius: 0 !important;
+.form-submit-btn {
+  font-size: 17px;
   width: 130px;
   height: 30px;
-  -webkit-appearance: none;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: 1px 1px 2px;
 }

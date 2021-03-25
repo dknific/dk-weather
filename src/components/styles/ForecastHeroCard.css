@@ -105,7 +105,7 @@
 
 .mobile-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 @media (min-width: 600px) {
   .mobile-container {
