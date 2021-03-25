@@ -6,13 +6,17 @@
   margin: 10px auto;
   border: 1px solid white;
   border-radius: 20px 20px 0 20px;
-  box-shadow: -5px 5px 7px 0 #b2c1d9
+  box-shadow: -7px 12px 7px 0 #b2c1d9;
 }
 @media (min-width: 600px) {
   .forecast-card {
     width: 100px;
     height: 140px;
     margin: 0;
+    border-radius: 0;
+    border: 1px solid black;
+    border-top: 0;
+    box-shadow: none;
   }
 }
 

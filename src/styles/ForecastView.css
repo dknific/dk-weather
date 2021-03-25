@@ -39,6 +39,15 @@
   }
 }
 
+.forecast {
+  box-shadow: none;
+}
+@media (min-width: 600px) {
+  .forecast {
+    box-shadow: 5px 6px 1px #b2c1d9;;
+  }
+}
+
 .forecast-cards-container {
   display: block;
 }

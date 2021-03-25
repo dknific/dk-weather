@@ -19,11 +19,13 @@ function ForecastView(props) {
 
       <h2>Your 7-day forecast for <br/>{location.name}:</h2>
 
-      <ForecastHeroCard forecast={heroForecast} date={datesArray[0]} />
-      <div className="forecast-cards-container">
-        {forecasts.map((day, index) =>
-          <ForecastCard forecast={day} date={datesArray[index + 1]} key={index} />
-        )}
+      <div className="forecast">
+        <ForecastHeroCard forecast={heroForecast} date={datesArray[0]} />
+        <div className="forecast-cards-container">
+          {forecasts.map((day, index) =>
+            <ForecastCard forecast={day} date={datesArray[index + 1]} key={index} />
+          )}
+        </div>
       </div>
     </div>
   );
