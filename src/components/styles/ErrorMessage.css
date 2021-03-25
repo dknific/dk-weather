@@ -4,6 +4,7 @@
   margin: 10px auto;
   border: 1px solid red;
   border-radius: 4px;
+  text-align: center;
   animation: errorShake 0.21s cubic-bezier(.36,.07,.19,.97) both;
   transform: translate3d(0, 0, 0);
 }
