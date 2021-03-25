@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import '../styles/CityVerification.css';
+import './styles/CityVerification.css';
 
 function CityVerification(props) {
   const { loading, statusCode, location, getForecast, resetApp } = props;

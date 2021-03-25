@@ -14,6 +14,27 @@ body {
   background-color: #cbdcf7;
 }
 
+.App {
+  text-align: center;
+  height: 100%;
+}
+
+.App-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 25px;
+}
+@media (min-width: 600px) {
+  .App-body {
+    margin: 0;
+  }
+}
+
+.App-body > .loading {
+  opacity: 0.2;
+}
+
 input[type="submit"],
 button:hover {
   cursor: pointer;
@@ -23,4 +44,8 @@ button:hover {
   background: white;
   border-radius: 21px 21px 0 21px;
   padding: 25px;
+}
+
+.bubble-container.input-form-container {
+  text-align: left;
 }

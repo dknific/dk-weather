@@ -10,8 +10,6 @@ import {
   getWeatherForecast,
 } from './lib/helperFunctions';
 
-import './styles/App.css';
-
 function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [userIn, setUserIn] = useState('');

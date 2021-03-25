@@ -1,4 +1,4 @@
-import '../styles/LoadingOverlay.css'
+import './styles/LoadingOverlay.css'
 
 function LoadingOverlay() {
   return (

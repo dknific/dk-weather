@@ -3,7 +3,7 @@ import ForecastHeroCard from './ForecastHeroCard';
 import ForecastCard from './ForecastCard';
 import { generateDatesArray } from '../lib/helperFunctions';
 
-import '../styles/ForecastView.css';
+import './styles/ForecastView.css';
 
 function ForecastView(props) {
   const { location, forecast, resetApp } = props;

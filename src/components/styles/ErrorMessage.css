@@ -1,5 +1,4 @@
 .error-message-container {
-  color: white;
   padding: 10px 0;
   width: 80%;
   margin: 10px auto;
@@ -7,11 +6,6 @@
   border-radius: 4px;
   animation: errorShake 0.21s cubic-bezier(.36,.07,.19,.97) both;
   transform: translate3d(0, 0, 0);
-}
-@media (min-width: 600px) {
-  .error-message-container {
-
-  }
 }
 
 @keyframes errorShake {

@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import WeatherIcon from './WeatherIcon';
 
-import '../styles/ForecastHeroCard.css';
+import './styles/ForecastHeroCard.css';
 
 function ForecastHeroCard(props) {
   const { forecast, date } = props;

@@ -1,4 +1,4 @@
-import '../styles/AppHeader.css';
+import './styles/AppHeader.css';
 
 function AppHeader() {
   return (
